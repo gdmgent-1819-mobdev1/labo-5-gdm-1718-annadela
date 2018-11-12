@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog</title>
+</head>
+
+<body>
+    <div class="user">
+        <div class="container">
+            <h1>Sign up</h1>
+            <form action="">
+                <label for="signup_email">Email</label>
+                <input type="email" name="signup_email" id="signup_email">
+                <label for="signup_password">Password</label>
+                <input type="password" name="ignup_password" id="signup_password">
+                <button type="submit" id="btn_signup">Sign up</button>
+            </form>
+            <p class="error" id="signup_error"></p>
+        </div>
+        <div id="user_info"></div>
+    </div>
+    <a href="login.html">heb je al een acount?</a>
+    <script src="JS/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBfR9n3jWhVAS9WJc0uKGeesbf3weGreN8",
+    authDomain: "eersteproject-c4c8c.firebaseapp.com",
+    databaseURL: "https://eersteproject-c4c8c.firebaseio.com",
+    projectId: "eersteproject-c4c8c",
+    storageBucket: "eersteproject-c4c8c.appspot.com",
+    messagingSenderId: "119221637084"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+
+</html>
