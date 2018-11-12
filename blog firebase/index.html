@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blogger</title>
+  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id='container'>
+    <div id='blogposts'></div>
+    <div id='editor'>
+      <h1>New blogpost</h1>
+      <form action="">
+        <label id="title_name" for="title">Title</label>
+        <input type="text" name="title" id="title"><br>
+        <textarea name="editor1" id="editor1" rows="10" cols="80">
+            Blogpost content goes here!
+          </textarea><br>
+        <button type="submit" id="btn_publish">Publish post</button>
+        <div id="updateBtn">
+      </form>
+      <p class="error" id="errors"></p>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBfR9n3jWhVAS9WJc0uKGeesbf3weGreN8",
+      authDomain: "eersteproject-c4c8c.firebaseapp.com",
+      databaseURL: "https://eersteproject-c4c8c.firebaseio.com",
+      projectId: "eersteproject-c4c8c",
+      storageBucket: "eersteproject-c4c8c.appspot.com",
+      messagingSenderId: "119221637084"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
