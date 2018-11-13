@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../image/stone.jpg);
+    background-size: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    background-color: #a61924;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.btn_clean{
+    background:none;
+    border:none;
+    font-size:1em;
+    color:blue;
+}
+
+.nav , .title{
+    color: white;
+    font-family: 'Fjalla One', Arial, sans-serif;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.nav:hover{
+    border-left: 10px solid white;
+    background-color: #df2534;
+    transition: 0.5s;
+}
+
+.blogpost_blocks{
+    background-color: white;
+    width: 60%;
+}
+
+.blogpost_blocks  h1{
+    background-color: #a61924;
+    color: white;
+    font-family: 'Fjalla One', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.blogpost_list{
+    width: 80%;
+    margin:0 auto ;
+}
+
+.title{
+    color: #a61924;
+}
+
+.publish{
+    color: #9C9C9C;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+
+p{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+.blogpost{
+    border: 1px solid #9C9C9C;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(160, 159, 159);
+}
+
+.user{
+    width: 40%;
+    margin-top: 10%;
+}
+
+.gegevens{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.label{
+    font-family: 'Fjalla One', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.layout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.gray{
+    background-color: rgba(156, 156, 156, 0.856);
+    font-family: 'Fjalla One', Arial, sans-serif;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    width: 45%;
+    text-align: center;
+}
+
+.gray:hover{
+    border-left: 15px solid #df2534;
+    transition: 0.5s;
+}
+
+.home , .in{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.in{
+    background-color: #a61924;
+}
+
+.buttons{
+    align-items: center;
+}
+.editor{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    
+}
+.title_blog{
+    font-family: 'Fjalla One', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.little{
+    font-size: 15px;
+}
+
+.littleLayout{
+    width: 50%;
+}
+
+.blog{
+    background-color: rgb(223, 222, 222);
+}
+

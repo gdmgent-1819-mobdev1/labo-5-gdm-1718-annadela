@@ -6,38 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>blog</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 </head>
 
 <body>
-    <div class="user">
-        <div class="container2">
-            <h1>Log in</h1>
-            <form action="">
-                <label for="login_email">Email</label>
-                <input type="email" name="login_email" id="login_email">
-                <label for="login_password">Password</label>
-                <input type="password" name="login_password" id="login_password">
-                <button type="submit" id="btn_login">Login</button>
-            </form>
+    <div class="blogpost_blocks user">
+        <h1>Log in</h1>
+        <form class="gegevens" action="">
+            <label class="label" for="login_email">Email</label>
+            <input class="input" type="email" name="login_email" id="login_email">
+            <label class="label" for="login_password">Password</label>
+            <input class="input" type="password" name="login_password" id="login_password">
+        </form>
+        <div class="gegevens buttons">
             <p class="error" id="login_error"></p>
+            <div id="user_info"></div>
+            <div class="layout">
+            <a class="gray" href="signin.html">Nog geen acount?</a>
+            <button class="btn_clean gray" type="submit" id="btn_forgot">paswoord vergeten?</button></div>
+            <button class="in gray btn_clean" type="submit" id="btn_login">Login</button>
+            <a class="home gray" href="index.html">HOME</a>
         </div>
-       
-        <a href="signin.html">Nog geen acount?</a>
     </div>
-    <script src="JS/main.js"></script>
+
+
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBfR9n3jWhVAS9WJc0uKGeesbf3weGreN8",
-    authDomain: "eersteproject-c4c8c.firebaseapp.com",
-    databaseURL: "https://eersteproject-c4c8c.firebaseio.com",
-    projectId: "eersteproject-c4c8c",
-    storageBucket: "eersteproject-c4c8c.appspot.com",
-    messagingSenderId: "119221637084"
-  };
-  firebase.initializeApp(config);
-</script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBfR9n3jWhVAS9WJc0uKGeesbf3weGreN8",
+            authDomain: "eersteproject-c4c8c.firebaseapp.com",
+            databaseURL: "https://eersteproject-c4c8c.firebaseio.com",
+            projectId: "eersteproject-c4c8c",
+            storageBucket: "eersteproject-c4c8c.appspot.com",
+            messagingSenderId: "119221637084"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="JS/login.js"></script>
 </body>
 
 </html>
