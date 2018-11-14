@@ -159,3 +159,7 @@ p{
     background-color: rgb(223, 222, 222);
 }
 
+.blogposts{
+    display: flex;
+    flex-direction: column-reverse;
+}
